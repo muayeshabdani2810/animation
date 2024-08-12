@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#road{
+    width: 100%;
+    position: relative;
+
+}
+#car{
+    position: absolute;
+    z-index: 1;
+    right: -30%;
+    bottom: 0%;
+    animation-name: car;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+@keyframes car{
+    0%{
+        right: -20%;
+        bottom: 0;
+    }
+    100%{
+        right: 100%;
+        bottom: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <img id="road" src="road.jpeg" alt="">
+    <img id="car" src="car_1-removebg-preview.png" alt="">
+</body>
+</html>
